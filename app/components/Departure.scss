@@ -1,0 +1,58 @@
+.departure-wrapper {
+  display: flex;
+  width: 90vw;
+  justify-content: space-between;
+  border-bottom: 2px solid #D2DCE1;
+  box-sizing: border-box;
+  p {
+      font-size: 1em;
+      letter-spacing: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .line-number {
+      border-radius: 25px;
+      font-size: 1.3em;
+      color: #222;
+      margin-left: 3%;
+      padding: 7px;
+  }
+  .line-number.green {
+      border: 3px solid #A1B09E;
+  }
+  .line-number.red {
+      border: 3px solid #F4776B;
+  }
+  .time {
+      margin-right: 3%;
+      font-size: 1.2em;
+      font-weight: 600;
+      color: #403F4C;
+  }
+}
+@media screen and (min-width:768px) {
+  .departure-wrapper {
+    width: 80vw;
+    p {
+      font-size: 1.2em;
+      letter-spacing: 3px;
+    }
+    .line-number {
+      margin-left: 9%;
+    }
+    .time {
+      margin-right: 7%;
+      font-size: 1.5em;
+    }
+  }
+}
+@media screen and (min-width:1200px) {
+  .departure-wrapper {
+    width: 38vw;
+    max-width: 640px;
+    p {
+      font-size: 1.1em;
+    }
+  }
+}
